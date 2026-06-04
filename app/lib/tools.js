@@ -52,4 +52,40 @@ export const TOOLS = {
       { id: "resolution", label: "What outcome do you want?", placeholder: "e.g. a refund, replacement, apology, repair..." },
     ],
   },
+  "resignation-letter": {
+    name: "Resignation Letter Generator",
+    tag: "Job seekers",
+    blurb: "Leaving a job? Get a professional, gracious resignation letter that keeps the door open.",
+    fields: [
+      { id: "details", label: "Your situation", placeholder: "Your role, company, last day, and how you want to come across (warm, neutral, brief)..." },
+      { id: "reason", label: "Reason for leaving (optional)", placeholder: "e.g. new opportunity, relocation, career change — or leave blank to keep it private", optional: true },
+    ],
+  },
+  "out-of-office": {
+    name: "Out-of-Office Message Generator",
+    tag: "Everyone",
+    blurb: "Going away? Get a clear, professional auto-reply that covers the essentials in seconds.",
+    fields: [
+      { id: "details", label: "The details", placeholder: "Dates you're away, whether you'll check email, who to contact in your absence..." },
+      { id: "tone", label: "Tone (optional)", placeholder: "e.g. professional, friendly, brief", optional: true },
+    ],
+  },
+  "freelance-rate": {
+    name: "Freelance Rate Helper",
+    tag: "Business",
+    blurb: "Not sure what to charge? Describe your work and get a reasoned rate range with how to justify it.",
+    fields: [
+      { id: "work", label: "What do you do?", placeholder: "Your service, experience level, and where you're based..." },
+      { id: "context", label: "Project or client context (optional)", placeholder: "e.g. one-off project, ongoing retainer, client budget if known", optional: true },
+    ],
+  },
+  "performance-review": {
+    name: "Performance Review Phrase Generator",
+    tag: "Business",
+    blurb: "Writing a review? Turn rough notes about an employee into clear, constructive review phrases.",
+    fields: [
+      { id: "notes", label: "Your notes about the person", placeholder: "Strengths, areas to improve, specific examples, their role..." },
+      { id: "focus", label: "Focus area (optional)", placeholder: "e.g. communication, leadership, productivity", optional: true },
+    ],
+  },
 };
