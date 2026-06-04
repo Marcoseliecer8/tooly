@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { TOOLS } from "../../lib/tools";
+import { PROMPTS } from "../../lib/prompts";
 
 export const runtime = "edge";
 
@@ -12,7 +13,8 @@ export async function POST(request) {
     const { toolId, values } = await request.json();
 
     const tool = TOOLS[toolId];
-    if (!tool) {
+    const buildPrompt = PROMPTS[toolId];
+    if (!tool || !buildPrompt) {
       return json({ error: "Unknown tool." }, 400);
     }
 
@@ -26,7 +28,7 @@ export async function POST(request) {
     const message = await anthropic.messages.create({
       model: "claude-haiku-4-5-20251001",
       max_tokens: 1024,
-      messages: [{ role: "user", content: tool.buildPrompt(values) }],
+      messages: [{ role: "user", content: buildPrompt(values) }],
     });
 
     const text = message.content
