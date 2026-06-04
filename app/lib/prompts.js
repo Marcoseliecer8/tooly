@@ -52,4 +52,33 @@ DESIRED RESOLUTION:
 ${v.resolution}
 
 Write only the complaint letter, starting with "Dear Sir or Madam,".`,
+
+  "resignation-letter": (v) => `You are an expert career writer. Write a professional, gracious resignation letter based on the details below. Keep it brief and positive, express gratitude, and leave the relationship on good terms — never burn bridges.${v.reason ? ` The reason for leaving: ${v.reason}.` : " Do not speculate about or invent a reason for leaving; keep it private and professional."} Include a clear last working day if provided.
+
+DETAILS:
+${v.details}
+
+Write only the resignation letter, starting with "Dear [Manager's name],".`,
+
+  "out-of-office": (v) => `You are an expert at professional communication. Write a clear out-of-office auto-reply based on the details below.${v.tone ? ` Use a ${v.tone} tone.` : " Keep it professional and concise."} Cover: that the person is away, the dates if given, whether/when they'll respond, and any alternate contact. Do not add information that isn't provided.
+
+DETAILS:
+${v.details}
+
+Write only the out-of-office message.`,
+
+  "freelance-rate": (v) => `You are an experienced freelance business advisor. Based on the work described below, suggest a reasonable rate range (hourly and/or project-based as appropriate) and briefly explain the reasoning. Give the person language they can use to justify and communicate the rate to a client. Be realistic and note that rates vary by market. Do not present a single number as definitive; give a sensible range.
+
+WORK:
+${v.work}
+${v.context ? `\nCONTEXT:\n${v.context}` : ""}
+
+Provide the rate range and a short, practical explanation.`,
+
+  "performance-review": (v) => `You are an experienced manager and HR writer. Turn the rough notes below into clear, constructive, professional performance-review phrases. Balance genuine strengths with growth areas framed constructively. Group them under simple headings. Keep phrases specific and usable, avoid vague filler, and never be harsh or personal.${v.focus ? ` Pay particular attention to: ${v.focus}.` : ""}
+
+NOTES:
+${v.notes}
+
+Provide the review phrases, grouped by theme.`,
 };
