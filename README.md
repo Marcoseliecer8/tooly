@@ -7,4 +7,3 @@ A free toolbox of sharp, single-purpose AI tools. Built with Next.js, deployed o
 Set this in your Vercel project settings:
 
 - `ANTHROPIC_API_KEY` — your Anthropic API key
-- .
