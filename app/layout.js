@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export const metadata = {
   title: "Tooly — 100+ free AI tools for everyday work",
   description:
@@ -35,7 +37,21 @@ export default function RootLayout({ children }) {
           .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LRDW16MH06"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LRDW16MH06');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
