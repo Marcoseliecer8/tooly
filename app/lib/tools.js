@@ -7,6 +7,30 @@ export const TOOLS = {
       { id: "jobDescription", label: "Job description", placeholder: "Paste the job posting here..." },
       { id: "background", label: "Your background", placeholder: "Your experience, skills, and what makes you a fit..." },
     ],
+    seo: {
+      sections: [
+        {
+          heading: "Write a cover letter that actually gets read",
+          paragraphs: [
+            "A strong cover letter does something a resume can't: it connects your specific experience to the specific role in plain, human language. Hiring managers read dozens of generic letters that could have been sent to any company. The ones that stand out show that the applicant actually read the job description and understood what the team needs.",
+            "This free cover letter generator helps you do exactly that. You paste in the job description and a few honest notes about your background, and it writes a tailored draft that speaks to that role in particular — no filler, no placeholder brackets, no generic template language. You stay in control: treat the result as a strong first draft you can edit to sound more like you.",
+          ],
+        },
+        {
+          heading: "How to use it",
+          paragraphs: [
+            "Start by pasting the full job posting into the first box. The more detail it has — responsibilities, required skills, the company's tone — the more specific your letter can be. Then in the second box, write a few lines about your relevant experience: your current or most recent role, a couple of concrete accomplishments, and any skills that match what the posting asks for.",
+            "Click generate, and you'll get a complete cover letter in seconds. Read it through, swap in any specifics it couldn't know, and adjust the tone if you want it warmer or more formal. A good cover letter is short — three or four tight paragraphs — so resist the urge to pad it.",
+          ],
+        },
+      ],
+      faq: [
+        { q: "Is this cover letter generator free?", a: "Yes. You can generate cover letters for free, with no account or sign-up required. Paste your details, generate, and copy the result." },
+        { q: "Will employers know it was AI-assisted?", a: "The draft is written to sound natural and human, but you should always personalize it. Add specific details about the company and your experience that only you would know — that's what makes a letter genuinely yours and impossible to mistake for a template." },
+        { q: "How long should a cover letter be?", a: "Aim for three to four short paragraphs on a single page. Hiring managers skim, so a concise, focused letter that connects your experience to the role beats a long one every time." },
+        { q: "Do I still need a resume?", a: "Yes. A cover letter complements your resume rather than replacing it. The letter explains why you're a fit for this specific role; the resume provides the full record of your experience." },
+    ],
+    },
   },
   "email-rewriter": {
     name: "Email Rewriter",
