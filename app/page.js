@@ -7,6 +7,10 @@ const tools = [
   { name: "YouTube Title Generator", desc: "Describe your video, get 10 click-worthy titles.", tag: "Creators", href: "/youtube-titles" },
   { name: "Cold Email Writer", desc: "Personalized outreach that doesn't sound like a template.", tag: "Marketers", href: "/cold-email" },
   { name: "Complaint Letter Writer", desc: "Firm, clear, effective complaint letters in seconds.", tag: "Everyone", href: "/complaint-letter" },
+  { name: "Resignation Letter Generator", desc: "A professional, gracious resignation letter that keeps the door open.", tag: "Job seekers", href: "/resignation-letter" },
+  { name: "Out-of-Office Generator", desc: "A clear, professional auto-reply for when you're away.", tag: "Everyone", href: "/out-of-office" },
+  { name: "Freelance Rate Helper", desc: "Describe your work, get a reasoned rate range and how to justify it.", tag: "Business", href: "/freelance-rate" },
+  { name: "Performance Review Phrases", desc: "Turn rough notes into clear, constructive review phrases.", tag: "Business", href: "/performance-review" },
 ];
 
 export default function Home() {
