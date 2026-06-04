@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="c8j38oup8v6mwVZhDndtzDbp60jGBSDI174oL0tFj9Y" />
         <link
           href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap"
           rel="stylesheet"
