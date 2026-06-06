@@ -10,10 +10,12 @@ const tools = [
   { name: "Essay Intro Writer", short: "Essay Intro", desc: "Give a topic and thesis, get a strong opening paragraph.", cat: "Writing", href: "/essay-intro", icon: "🎓", color: "#534AB7", bg: "#EEEDFE" },
   { name: "Complaint Letter Writer", short: "Complaint", desc: "Firm, clear, effective complaint letters in seconds.", cat: "Writing", href: "/complaint-letter", icon: "📣", color: "#D4537E", bg: "#FBEAF0" },
   { name: "Out-of-Office Generator", short: "Out-of-Office", desc: "A clear, professional auto-reply for when you're away.", cat: "Writing", href: "/out-of-office", icon: "🏝️", color: "#378ADD", bg: "#E6F1FB" },
+  { name: "Thank You Note Writer", short: "Thank You", desc: "A warm, genuine thank you note for any occasion in seconds.", cat: "Writing", href: "/thank-you-note", icon: "🙏", color: "#D4537E", bg: "#FBEAF0" },
   { name: "Cold Email Writer", short: "Cold Email", desc: "Personalized outreach that doesn't sound like a template.", cat: "Business", href: "/cold-email", icon: "🚀", color: "#BA7517", bg: "#FAEEDA" },
   { name: "Freelance Rate Helper", short: "Freelance Rate", desc: "Describe your work, get a reasoned rate range and how to justify it.", cat: "Business", href: "/freelance-rate", icon: "💰", color: "#639922", bg: "#EAF3DE" },
   { name: "Performance Review Phrases", short: "Reviews", desc: "Turn rough notes into clear, constructive review phrases.", cat: "Business", href: "/performance-review", icon: "⭐", color: "#534AB7", bg: "#EEEDFE" },
   { name: "YouTube Title Generator", short: "YT Titles", desc: "Describe your video, get 10 click-worthy titles.", cat: "Creators", href: "/youtube-titles", icon: "🎬", color: "#D85A30", bg: "#FAECE7" },
+  { name: "Bio Generator", short: "Bio", desc: "A sharp bio for Instagram, LinkedIn, Twitter, or anywhere.", cat: "Creators", href: "/bio-generator", icon: "👤", color: "#D85A30", bg: "#FAECE7" },
 ];
 
 const categories = ["All", "Job Seekers", "Writing", "Business", "Creators"];
@@ -44,11 +46,9 @@ export default function Home() {
         .chip:hover { border-color: var(--green); }
         .search-input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px #1D9E7522; }
 
-        /* Grid layout */
         .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
         .tile-name-mobile { display: none; }
 
-        /* MOBILE: switch to app-style 3-per-row icon grid */
         @media (max-width: 600px) {
           .tools-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
           .tool-card { padding: 14px 8px !important; text-align: center; border-radius: 18px !important; }
@@ -69,7 +69,7 @@ export default function Home() {
 
       <section className="wrap hero-fade" style={{ padding: "64px 24px 36px", textAlign: "center" }}>
         <div style={{ fontSize: 13, letterSpacing: 2, textTransform: "uppercase", color: "var(--green)", fontWeight: 500, marginBottom: 16 }}>
-          ✨ 10 free AI tools · no signup
+          ✨ 12 free AI tools · no signup
         </div>
         <h1 className="hero-h1" style={{ fontSize: 54, fontWeight: 700, maxWidth: 680, margin: "0 auto 18px" }}>
           Get the writing done in seconds.
