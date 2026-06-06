@@ -1,5 +1,5 @@
-
 import ToolRunner from "../lib/ToolRunner";
+import ToolSeo from "../lib/ToolSeo";
 import { TOOLS } from "../lib/tools";
 
 const TOOL_ID = "performance-review";
@@ -11,5 +11,10 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ToolRunner toolId={TOOL_ID} tool={tool} />;
+  return (
+    <>
+      <ToolRunner toolId={TOOL_ID} tool={tool} />
+      <ToolSeo tool={tool} />
+    </>
+  );
 }
